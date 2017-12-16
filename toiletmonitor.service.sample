@@ -1,0 +1,10 @@
+[Unit]
+Description = monitor toilet
+
+[Service]
+ExecStart = /path/to/wcpacho.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

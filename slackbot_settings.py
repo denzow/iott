@@ -5,4 +5,4 @@ import os
 API_TOKEN = os.environ.get('SLACK_TOKEN')
 
 # プラグインスクリプトを置いてあるサブディレクトリ名のリスト
-# PLUGINS = ['plugins']
+PLUGINS = ['plugins']
