@@ -18,8 +18,9 @@ def get_lux():
 
 @respond_to('といれ')
 def check_toilet(message):
-    message.reply('明るさ{}'.format(get_lux()))
-    if get_lux() > 100:
+    lux = get_lux()
+    message.reply('明るさ{}'.format(lux))
+    if lux > LIGHT_THRESHOLD:
         message.reply('たぶん、中に誰もいなくないですよ')
     else:
         message.reply('たぶん、中に誰もいませんよ')
