@@ -19,6 +19,10 @@ def set_away():
     :return:
     """
     res = requests.get(API_URL.format(token=API_TOKEN, status='away'))
+    time.sleep(1)
+    res = requests.get(API_URL.format(token=API_TOKEN, status='away'))
+    time.sleep(1)
+    res = requests.get(API_URL.format(token=API_TOKEN, status='away'))
     print(res.content)
 
 
@@ -27,6 +31,10 @@ def set_active():
     Botのステータスを在籍にする
     :return:
     """
+    res = requests.get(API_URL.format(token=API_TOKEN, status='auto'))
+    time.sleep(1)
+    res = requests.get(API_URL.format(token=API_TOKEN, status='auto'))
+    time.sleep(1)
     res = requests.get(API_URL.format(token=API_TOKEN, status='auto'))
     print(res.content)
 
