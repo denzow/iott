@@ -2,7 +2,7 @@
 Description = monitor toilet
 
 [Service]
-ExecStart = /path/to/wcpacho.sh
+ExecStart = /path/to/wcpaccho.sh
 Restart = always
 Type = simple
 
